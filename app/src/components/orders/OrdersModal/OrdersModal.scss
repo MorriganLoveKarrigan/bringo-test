@@ -1,0 +1,131 @@
+@use '@/assets/scss/variables' as vars;
+
+.orders-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: vars.$modal-bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orders-modal-content {
+  background: vars.$modal-content-bg-color;
+  padding: vars.$modal-content-padding;
+  border-radius: vars.$border-radius;
+  width: vars.$modal-content-width;
+  max-height: vars.$modal-content-max-height;
+  max-width: vars.$modal-content-max-width;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: vars.$spacer;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-title {
+      font-size: 20px;
+      font-weight: vars.$font-weight-primary-bold;
+    }
+
+    &-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      img {
+        width: vars.$image-icon-size;
+        height: vars.$image-icon-size;
+      }
+    }
+  }
+}
+
+.orders-modal-form {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    margin-bottom: vars.$spacer;
+  }
+
+  label {
+    display: block;
+    margin-bottom: vars.$spacer-half;
+  }
+
+  input {
+    width: 100%;
+    padding: vars.$input-padding;
+    border: vars.$input-border;
+    border-radius: vars.$input-border-radius;
+  }
+
+  p {
+    color: vars.$error-text-color;
+    margin-top: vars.$spacer-quarter;
+  }
+
+  select {
+    width: 100%;
+    padding: vars.$input-padding;
+    border: vars.$input-border;
+    border-radius: vars.$input-border-radius;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: vars.$select-dropdown-arrow;
+
+    option {
+      padding: vars.$input-padding;
+      border-bottom: 1px solid #eee;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: vars.$color-primary;
+    }
+
+    &:disabled {
+      background-color: #eee;
+      color: #aaa;
+    }
+  }
+}
+
+.orders-modal-footer-button {
+  width: 100%;
+}
+
+.orders-modal-footer-total {
+  font-size: 18px;
+  font-weight: vars.$font-weight-primary-bold;
+}
+
+.orders-modal-content-goods {
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  button {
+    background: none;
+    border: none;
+
+    img {
+      width: vars.$image-icon-size;
+      height: vars.$image-icon-size;
+    }
+
+    &:hover {
+      background: none;
+    }
+  }
+}

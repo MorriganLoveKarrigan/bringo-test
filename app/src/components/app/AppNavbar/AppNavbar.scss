@@ -1,0 +1,53 @@
+@use '@/assets/scss/fonts' as fonts;
+@use '@/assets/scss/variables' as vars;
+
+.app-header {
+  background: vars.$color-light;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+.app-navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: vars.$spacer;
+  color: vars.$color-dark;
+  padding: vars.$spacer-half vars.$spacer-half;
+
+  .app-navbar-brand {
+    font-size: 24px;
+    font-weight: vars.$font-weight-secondary-bold;
+  }
+
+  .app-navbar-links{
+    margin-top: vars.$spacer-quarter;
+    display: flex;
+    align-items: center;
+    gap: vars.$spacer;
+
+    a {
+      position: relative;
+      text-decoration: none;
+      color: inherit;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: vars.$color-dark;
+        transition: width 0.3s ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}

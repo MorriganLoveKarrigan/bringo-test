@@ -1,0 +1,53 @@
+{
+  "orders": [
+    {
+      "client": "Maksud",
+      "order_date": "2024-02-04",
+      "goods": [
+        {
+          "price": 123000,
+          "good": "TELEFON"
+        },
+        {
+          "good": "TV",
+          "price": 145000
+        }
+      ],
+      "id": "a14136e6-53cd-4e26-ab1e-45b55f1627e7",
+      "total_amount": 268000
+    },
+    {
+      "id": "1a6cad0b-caad-444a-8c5c-cc784cfe38ce",
+      "client": "485cd6c2-d53f-41a8-a39a-2445c14a13f5",
+      "order_date": "2024-02-04",
+      "goods": [
+        {
+          "price": 140000,
+          "good": "TELEFON"
+        }
+      ],
+      "total_amount": 140000
+    },
+    {
+      "id": "79cd1c9d-d963-4b19-bc77-17b481fcfc36",
+      "client": "Эргашев Максуд1",
+      "order_date": "2024-02-04",
+      "goods": [
+        {
+          "price": 130000,
+          "good": "TV"
+        }
+      ],
+      "total_amount": 130000
+    }
+  ],
+  "clients": [
+    {
+      "id": "f844ff36-792a-4b3c-92e3-8eda4efbed01",
+      "full_name": "Эргашев Максуд",
+      "birth_date": "1997-10-01",
+      "address": "Ташкент Алмазарский район",
+      "phone": "906442134"
+    }
+  ]
+}

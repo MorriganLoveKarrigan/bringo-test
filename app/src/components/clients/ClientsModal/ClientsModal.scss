@@ -1,0 +1,78 @@
+@use '@/assets/scss/variables' as vars;
+
+.clients-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: vars.$modal-bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-modal-content {
+  background: vars.$modal-content-bg-color;
+  padding: vars.$modal-content-padding;
+  border-radius: vars.$border-radius;
+  width: vars.$modal-content-width;
+  max-height: vars.$modal-content-max-height;
+  max-width: vars.$modal-content-max-width;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: vars.$spacer;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    &-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      img {
+        width: vars.$image-icon-size;
+        height: vars.$image-icon-size;
+      }
+    }
+  }
+}
+
+.clients-modal-form {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    margin-bottom: vars.$spacer;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input {
+    width: 100%;
+    padding: vars.$input-padding;
+    border: vars.$input-border;
+    border-radius: vars.$input-border-radius;
+  }
+
+  p {
+    color: vars.$error-text-color;
+    margin-top: 5px;
+  }
+}
+
+.clients-modal-footer-button {
+  width: 100%;
+}

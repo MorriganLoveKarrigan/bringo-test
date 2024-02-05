@@ -1,0 +1,68 @@
+@use '@/assets/scss/variables' as vars;
+
+.app-table {
+  &:deep {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+
+    th,
+    td {
+      padding: vars.$spacer;
+      text-align: center;
+      border-bottom: 1px solid #dddddd;
+
+      button {
+        background: none;
+        border: none;
+
+        img {
+          width: vars.$image-icon-size;
+          height: vars.$image-icon-size;
+          cursor: pointer;
+          border-radius: 50%;
+          transition: filter 0.3s ease;
+
+          &:hover {
+            filter: drop-shadow(0 0 10px #B75D69);
+          }
+        }
+      }
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+      position: relative;
+
+      &:first-child {
+        border-top-left-radius: vars.$border-radius;
+      }
+
+      &:last-child {
+        border-top-right-radius: vars.$border-radius;
+      }
+    }
+
+    tr {
+      &:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      &:hover {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+}
+
+.rows-enter-active,
+.rows-leave-active {
+  transition: all 0.5s ease;
+}
+
+.rows-enter-from,
+.rows-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}

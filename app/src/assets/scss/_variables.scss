@@ -1,0 +1,58 @@
+$color-primary: #007bff;
+$color-light: #f8f9fa;
+$color-dark: #343a40;
+
+$border-radius: 6px;
+
+$modal-bg-color: rgba(0, 0, 0, 0.5);
+$modal-content-bg-color: white;
+$modal-content-padding: 20px;
+$modal-content-width: 80%;
+$modal-content-max-height: 600px;
+$modal-content-max-width: 500px;
+
+$error-text-color: red;
+
+$image-icon-size: 24px;
+
+$input-padding: 10px;
+$input-border: 1px solid #ccc;
+$input-border-radius: 3px;
+
+$select-dropdown-arrow : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23ccc' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center/8px 10px;
+
+$font-family-primary: 'Roboto', sans-serif;
+$font-family-secondary: 'Oswald', sans-serif;
+$font-weight-primary-normal: 400;
+$font-weight-primary-bold: 700;
+$font-weight-secondary-normal: 400;
+$font-weight-secondary-bold: 700;
+
+$spacer: 16px;
+$spacer-half: 0.5 * $spacer;
+$spacer-quarter: 0.25 * $spacer;
+
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+$container-max-width-xs: 100%;
+$container-max-width-sm: 540px;
+$container-max-width-md: 720px;
+$container-max-width-lg: 960px;
+$container-max-width-xl: 1140px;
+$container-max-width-xxl: 1320px;
+
+@mixin app-container-width($breakpoint, $max-width) {
+  @media (min-width: $breakpoint) {
+    .app-container {
+      max-width: $max-width;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+

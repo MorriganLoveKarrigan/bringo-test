@@ -1,0 +1,16 @@
+@use '@/assets/scss/variables' as vars;
+
+.clients-main-page {
+  display: flex;
+  flex-direction: column;
+  gap: vars.$spacer;
+
+  &-create-block {
+    display: flex;
+    justify-content: end;
+
+    button {
+
+    }
+  }
+}

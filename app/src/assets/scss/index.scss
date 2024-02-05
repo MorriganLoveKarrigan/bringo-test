@@ -1,0 +1,25 @@
+@use "reset";
+@use "variables" as vars;
+@use "fonts" as fnts;
+@import './main.scss';
+
+body {
+  font-family: fnts.$font-family-primary;
+  background-color: vars.$color-light;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: fnts.$font-family-secondary;
+  font-weight: vars.$font-weight-secondary-bold;
+}
+
+p {
+  font-family: fnts.$font-family-primary;
+  font-weight: vars.$font-weight-primary-normal;
+}
+
+@include vars.app-container-width(vars.$breakpoint-sm, vars.$container-max-width-sm);
+@include vars.app-container-width(vars.$breakpoint-md, vars.$container-max-width-md);
+@include vars.app-container-width(vars.$breakpoint-lg, vars.$container-max-width-lg);
+@include vars.app-container-width(vars.$breakpoint-xl, vars.$container-max-width-xl);
+@include vars.app-container-width(vars.$breakpoint-xxl, vars.$container-max-width-xxl);

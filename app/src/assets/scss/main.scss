@@ -1,0 +1,50 @@
+@use "variables" as vars;
+@use "fonts" as fonts;
+@forward "variables";
+@import "reset";
+
+body {
+  font-family: vars.$font-family-primary;
+  background-color: vars.$color-light;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: vars.$font-family-secondary;
+  font-weight: vars.$font-weight-secondary-bold;
+}
+
+p {
+  font-family: vars.$font-family-primary;
+  font-weight: vars.$font-weight-primary-normal;
+}
+
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  min-width: 100%;
+  padding-left: vars.$spacer;
+  padding-right: vars.$spacer;
+}
+
+.app-button {
+  padding: vars.$spacer-half;
+  background-color: vars.$color-primary;
+  color: vars.$color-light;
+  border: none;
+  border-radius: vars.$border-radius;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: vars.$color-dark;
+  }
+}
+
+@include vars.app-container-width(vars.$breakpoint-sm, vars.$container-max-width-sm);
+@include vars.app-container-width(vars.$breakpoint-md, vars.$container-max-width-md);
+@include vars.app-container-width(vars.$breakpoint-lg, vars.$container-max-width-lg);
+@include vars.app-container-width(vars.$breakpoint-xl, vars.$container-max-width-xl);
+@include vars.app-container-width(vars.$breakpoint-xxl, vars.$container-max-width-xxl);
