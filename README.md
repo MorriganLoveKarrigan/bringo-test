@@ -26,7 +26,7 @@ Before you begin, ensure you have met the following requirements:
 To install Bringo Test and its dependencies, follow these steps:
 
 1. Clone the repository: git clone [https://github.com/MorriganLoveKarrigan/bringo-test.git](https://github.com/MorriganLoveKarrigan/bringo-test.git)
-2. Navigate to the project directory: cd bringo-test
+2. Navigate to the project directory: cd bringo-test cd app
 3. Install the required packages: npm install
 
 ## Getting Started
