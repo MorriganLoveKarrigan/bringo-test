@@ -13,7 +13,7 @@
 
 ## Introduction
 
-Bringo Test is a fun project created over a Sunday evening. The aim is to provide a delightful experience for users. Enjoy exploring its features!
+Bringo Test is a project created over a Sunday evening.
 
 ## Prerequisites
 
