@@ -20,7 +20,6 @@ Bringo Test is a fun project created over a Sunday evening. The aim is to provid
 Before you begin, ensure you have met the following requirements:
 
 - You have installed Node.js and npm.
-- You have a basic understanding of JavaScript and React.
 
 ## Installation
 
